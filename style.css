@@ -1,189 +1,283 @@
-/* CSS FOR NAV */
-*,*:before,*:after {
-    box-sizing: border-box;
-  }
-  
-  :after {
-    content: "";
-  }
-  
-  section {
-    position: relative;
-    left: 100px;
-  }
-
-  
-  body {
-    padding: 100px 0;
-
-    color: white;
-    max-width:640px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height:1.4;
-    font-smoothing: anti-aliased;
-  }
-  
-  nav {
-    float: left;
-    position: absolute;
-    top: 17.5%;
-    left: -32.5px;
-    background: transparent;
-  }
-  
-  nav ul {
+.header {
+    background-color:  #eca376;
+    color: #fff;
     text-align: center;
-  }
-  
-  nav ul li {
-    position: relative;
-    width: 70px;
-    cursor: pointer;
-    background: #ff914d;
-    text-transform: uppercase;
-    transition:all .4s ease-out;
-  }
-  
-  nav ul li:after {
-    position: absolute;
-    background: white;
-    color: #ff914d;
-    top:0;
-    left: 70px;
-    width: 70px; height: 100%;
-    opacity:.5;
-    transform: perspective(400px) rotateY(90deg);
-    transform-origin: 0 100%;
-    transition:all .4s ease-out;
-  }
-  
-  nav ul li:nth-child(1):after { 
-    content: "Home";
-    line-height: 88px;
-  }
-  nav ul li:nth-child(2):after { 
-    content: "About Us";
-    line-height: 110px;
-  }
-  nav ul li:nth-child(3):after { 
-    content: "Products";
-    line-height: 125px;
-  }
-  nav ul li:nth-child(4):after { 
-    content: "Contact";
-    line-height: 70px;
-  }
-  
-  nav ul li:hover {
-    transform: translateX(-70px);
-  }
-  
-  nav ul li:hover:after {
-    opacity: 1;
-    transform: perspective(400px) rotateY(0deg) scale(1) ;
-  }
-  
-  
-  nav ul li > div {
-    display: inline-block;
-    padding: 25px 0;
-    background: transparent;
-  }
-  
-  nav ul li div { position: relative; }
-  
-  .roof {
-    width: 0;
-    height: 0;
-    top:2px;
-    border-style: solid;
-    border-width: 0 21px 15px 21px;
-    border-color: transparent transparent #ffffff transparent;
-  }
-  
-  .roof-edge {
-    position: absolute;
-    z-index: 20;
-    left: -17px;
-    top: 3px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 17px 12px 17px;
-    border-color: transparent transparent #ff914d transparent;
-  }
-  /*white triangle over red triangle*/
-  .roof-edge:after {
-    position: absolute;
-    left: -14.5px;
-    top: 3px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 14.5px 10px 14.5px;
-    border-color: transparent transparent white transparent;
-  }
-  
-  .front {
-    position: relative;
-    top: 3px;
-    width: 28.5px;
-    height: 20px;
-    margin: 0 auto;
-    background: white;
-  }
-  /*door*/
-  .front:after {
-    position: absolute;
-    background: #ff914d;
-    width: 11px;
-    height: 13px;
-    bottom: 0;
-    left:9px;
-  }
-  
-  /*/// About me ////*/
-  
+    
+}
 
+.imgfix2 {
+  min-width: 10px;
+  height: 200px
+}
+/* HERO IMAGE LARGE CSS */
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("imgs/workbench.jpeg");
+
+  /* Set a specific height */
+  height: 85vh;
+  width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-size: 36px;
+  vertical-align: center;
+  text-align: center;
+  position: relative;
+  top: 15%;
+  color: white;
+  width: 100%;
   
-  /*//Gallery//*/
-  .imgfix {
-    width: 100%;
-    height: 100%;
-  }
-  
-  
-  /*//mail //*/
-  
-  .mail-base {
-    position: relative;
-    width: 32px;
-    height: 18px;
-    background: white;
-  }
-  
-  .mail-top {
-    position: absolute;
-    z-index: 20;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 0;
-    transform: rotate(180deg);
-    border-style: solid;
-    border-width: 0 16px 11px 16px;
-    border-color: transparent transparent #ff914d transparent;
-  }
-  
-  .mail-top:after {
-    position: absolute;
-    z-index: 20;
-    left: -16px;
-    top: 3px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 16px 9px 16px;
-    border-color: transparent transparent white transparent;
-  }
+}
+
+.fontsize {
+  font-size: 10vw;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fontsize2 {
+  font-size: 6vw;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*END OF HERO IMG CSS*/
+
+/* HERO IMAGE SMALL CSS */
+
+/* The hero image */
+.hero-image2 {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("imgs/workbench.jpeg");
+
+  /* Set a specific height */
+  height: 85vh;
+  width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text2 {
+  font-size: 3vw;
+  vertical-align: center;
+  text-align: center;
+  position: relative;
+  top: 20%;
+  color: white;
+  width: 100%;
+}
+
+.btnstyle1 {
+  border-radius: 10px 10px 10px 10px;
+  background-color: #ff914d;
+  border:solid white 2px;
+}
+
+/*END OF HERO IMG CSS*/
+
+/* CSS FOR NAV */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:after {
+  content: "";
+}
+
+section {
+  position: relative;
+  left: 100px;
+}   
+
+nav {
+  float: left;
+  position: fixed;
+  top: 17.5%;
+  left: -32.5px;
+  background: transparent;
+  padding: 100px 0;
+
+  color: white;
+  max-width: 640px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-smoothing: anti-aliased;
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav ul li {
+  position: relative;
+  width: 70px;
+  cursor: pointer;
+  background: #ff914d;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
+}
+
+nav ul li:after {
+  position: absolute;
+  background: white;
+  color: #ff914d;
+  top: 0;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+  opacity: 0.5;
+  transform: perspective(400px) rotateY(90deg);
+  transform-origin: 0 100%;
+  transition: all 0.4s ease-out;
+}
+
+nav ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 88px;
+}
+nav ul li:nth-child(2):after {
+  content: "About Us";
+  line-height: 110px;
+}
+nav ul li:nth-child(3):after {
+  content: "Toys";
+  line-height: 125px;
+}
+nav ul li:nth-child(4):after {
+  content: "Contact";
+  line-height: 70px;
+}
+
+nav ul li:hover {
+  transform: translateX(-70px);
+}
+
+nav ul li:hover:after {
+  opacity: 1;
+  transform: perspective(400px) rotateY(0deg) scale(1);
+}
+
+nav ul li > div {
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
+}
+
+nav ul li div {
+  position: relative;
+}
+
+.roof {
+  width: 0;
+  height: 0;
+  top: 2px;
+  border-style: solid;
+  border-width: 0 21px 15px 21px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.roof-edge {
+  position: absolute;
+  z-index: 20;
+  left: -17px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 12px 17px;
+  border-color: transparent transparent #ff914d transparent;
+}
+/*white triangle over red triangle*/
+.roof-edge:after {
+  position: absolute;
+  left: -14.5px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 14.5px 10px 14.5px;
+  border-color: transparent transparent white transparent;
+}
+
+.front {
+  position: relative;
+  top: 3px;
+  width: 28.5px;
+  height: 20px;
+  margin: 0 auto;
+  background: white;
+}
+/*door*/
+.front:after {
+  position: absolute;
+  background: #ff914d;
+  width: 11px;
+  height: 13px;
+  bottom: 0;
+  left: 9px;
+}
+
+/*/// About me ////*/
+
+/*//Gallery//*/
+.imgfix {
+  width: 100%;
+  height: 100%;
+}
+
+/*//mail //*/
+
+.mail-base {
+  position: relative;
+  width: 32px;
+  height: 18px;
+  background: white;
+}
+
+.mail-top {
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transform: rotate(180deg);
+  border-style: solid;
+  border-width: 0 16px 11px 16px;
+  border-color: transparent transparent #ff914d transparent;
+}
+
+.mail-top:after {
+  position: absolute;
+  z-index: 20;
+  left: -16px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 16px 9px 16px;
+  border-color: transparent transparent white transparent;
+}
+
