@@ -156,9 +156,10 @@ nav ul li:after {
 nav ul li:nth-child(1):after {
   content: "Home";
   line-height: 88px;
+  
 }
 nav ul li:nth-child(2):after {
-  content: "About Us";
+  content: "About";
   line-height: 110px;
 }
 nav ul li:nth-child(3):after {
@@ -167,7 +168,7 @@ nav ul li:nth-child(3):after {
 }
 nav ul li:nth-child(4):after {
   content: "Contact";
-  line-height: 70px;
+  line-height: 60px;
 }
 
 nav ul li:hover {
@@ -281,3 +282,12 @@ nav ul li div {
   border-color: transparent transparent white transparent;
 }
 
+body {
+  background-color: #eca376;
+  color: white;
+}
+
+.textfont {
+  font-weight: 200;
+  font-style: normal;
+}

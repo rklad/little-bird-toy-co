@@ -44,7 +44,9 @@
         <div class="hero-text2">
           <p class="fontsize m-0">Little Bird Toy Co.</p>
           <p class="fontsize2">Wooden Toy Shop</p>
-          <button class="btnstyle1">Learn More</button>
+          <a class="btn" href="#about"
+            ><button class="btn btnstyle1 text-white">Learn More</button></a
+          >
         </div>
       </div>
       <!--END OF LANDING PAGE-->
@@ -52,30 +54,30 @@
       <!-- START OF NAV-->
       <nav>
         <ul>
-        <a href="#top">
-          <li>
+          <li data-href="#top" class="d-inline-block">
             <div class="home-icon">
-                <div class="roof">
-                  <div class="roof-edge"></div>
-                </div>
-                <div class="front"></div>
+              <div class="roof">
+                <div class="roof-edge"></div>
+              </div>
+              <div class="front"></div>
             </div>
           </li>
-        </a>
 
-          <li>
+          <li data-href="#about">
             <div class="about-icon">
               <div class="aboutus">
                 <img src="imgs/mainlogowhite.png" class="imgfix" />
               </div>
             </div>
           </li>
-          <li>
+
+          <li data-href="#gallery">
             <div class="work-icon">
               <img src="imgs/blocks.png" class="imgfix" />
             </div>
           </li>
-          <li>
+
+          <li data-href="#contact">
             <div class="mail-icon">
               <div class="mail-base">
                 <div class="mail-top"></div>
@@ -86,7 +88,40 @@
       </nav>
       <!--END OF NAV -->
     </header>
-    <main></main>
+
+    <main>
+      <!--HERO IMG/DESCRIPTION-->
+      <div class="container text-center">
+        <h1 class="pt-3"><b><u>About Us</u></b></h1>
+        <div class="row m-3" id="about">
+          <div
+            class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <img
+                src="imgs/lbtchero.png"
+                class="rounded-3 img-fluid"
+                id="imgfix"
+              />
+            </div>
+          </div>
+          <div
+            class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
+            id="text"
+          >
+            <h2 class="textfont">
+              Prior to his final semester at Illinois, the United States entered
+              the Great War (World War 1), and Halas enlisted in the United
+              States Navy. He would later be awarded his college diploma despite
+              not finishing all required coursework. Halas was assigned to Great
+              Lakes Naval Base and ordered to organize great US Service teams in
+              football and basketball.
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!--END OF HERO IMG/DESCRIPTION-->
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>
