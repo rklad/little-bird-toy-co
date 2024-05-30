@@ -291,3 +291,70 @@ body {
   font-weight: 200;
   font-style: normal;
 }
+
+/* CODE FOR QUOTE SLIDESHOW, FROM W3SCHOOLS */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+  z-index: -1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+  z-index: -1;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+  z-index: -1;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  z-index: -1;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+  z-index: -1;
+}
+
+/* Add an italic font style to all quotes */
+q {
+  font-style: italic;
+  color: black;
+  z-index: -1;
+  font-size: 20px;
+}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue; z-index: -1;}
+
+.headersect {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 250;
+  font-style: normal;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: white;
+}

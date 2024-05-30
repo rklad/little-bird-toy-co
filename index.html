@@ -1,142 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Little Bird Toy Co</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!--GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="imgs/Main Logo.png" />
-  </head>
+<head>
+  <title>Little Bird Toy Co</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <header>
-      <!--START OF lANDING PAGE-->
-      <div class="header" id="top">
-        <img src="imgs/Main Logo.png" class="img-fluid imgfix2" />
+  <!--GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="imgs/Main Logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--START OF lANDING PAGE-->
+    <div class="header" id="top">
+      <img src="imgs/Main Logo.png" class="img-fluid imgfix2" />
+    </div>
+    <div class="hero-image img-fluid d-none d-md-block">
+      <div class="hero-text">
+        <p class="fontsize m-0">Little Bird Toy Co.</p>
+        <p class="fontsize2">Wooden Toy Shop</p>
+        <button data-href="#about" class="btnstyle1 text-white">
+          Learn More
+        </button>
       </div>
-      <div class="hero-image img-fluid d-none d-md-block">
-        <div class="hero-text">
-          <p class="fontsize m-0">Little Bird Toy Co.</p>
-          <p class="fontsize2">Wooden Toy Shop</p>
-          <button class="btnstyle1 text-white">Learn More</button>
-        </div>
+    </div>
+    <div class="hero-image2 d-md-none d-block">
+      <div class="hero-text2">
+        <p class="fontsize m-0">Little Bird Toy Co.</p>
+        <p class="fontsize2">Wooden Toy Shop</p>
+        <button data-href="#about" class="btn btnstyle1 text-white">
+          Learn More
+        </button>
       </div>
-      <div class="hero-image2 d-md-none d-block">
-        <div class="hero-text2">
-          <p class="fontsize m-0">Little Bird Toy Co.</p>
-          <p class="fontsize2">Wooden Toy Shop</p>
-          <a class="btn" href="#about"
-            ><button class="btn btnstyle1 text-white">Learn More</button></a
-          >
-        </div>
-      </div>
-      <!--END OF LANDING PAGE-->
+    </div>
+    <!--END OF LANDING PAGE-->
 
-      <!-- START OF NAV-->
-      <nav>
-        <ul>
-          <li data-href="#top" class="d-inline-block">
-            <div class="home-icon">
-              <div class="roof">
-                <div class="roof-edge"></div>
-              </div>
-              <div class="front"></div>
+    <!-- START OF NAV-->
+    <nav>
+      <ul>
+        <li data-href="#top" class="d-inline-block">
+          <div class="home-icon">
+            <div class="roof">
+              <div class="roof-edge"></div>
             </div>
-          </li>
+            <div class="front"></div>
+          </div>
+        </li>
 
-          <li data-href="#about">
-            <div class="about-icon">
-              <div class="aboutus">
-                <img src="imgs/mainlogowhite.png" class="imgfix" />
-              </div>
-            </div>
-          </li>
-
-          <li data-href="#gallery">
-            <div class="work-icon">
-              <img src="imgs/blocks.png" class="imgfix" />
-            </div>
-          </li>
-
-          <li data-href="#contact">
-            <div class="mail-icon">
-              <div class="mail-base">
-                <div class="mail-top"></div>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </nav>
-      <!--END OF NAV -->
-    </header>
-
-    <main>
-      <!--HERO IMG/DESCRIPTION-->
-      <div class="container text-center">
-        <h1 class="pt-3"><b><u>About Us</u></b></h1>
-        <div class="row m-3" id="about">
-          <div
-            class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center"
-          >
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <img
-                src="imgs/lbtchero.png"
-                class="rounded-3 img-fluid"
-                id="imgfix"
-              />
+        <li data-href="#about">
+          <div class="about-icon">
+            <div class="aboutus">
+              <img src="imgs/mainlogowhite.png" class="imgfix" />
             </div>
           </div>
-          <div
-            class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
-            id="text"
-          >
-            <h2 class="textfont">
-              Prior to his final semester at Illinois, the United States entered
-              the Great War (World War 1), and Halas enlisted in the United
-              States Navy. He would later be awarded his college diploma despite
-              not finishing all required coursework. Halas was assigned to Great
-              Lakes Naval Base and ordered to organize great US Service teams in
-              football and basketball.
-            </h2>
+        </li>
+
+        <li data-href="#gallery">
+          <div class="work-icon">
+            <img src="imgs/blocks.png" class="imgfix" />
+          </div>
+        </li>
+
+        <li data-href="#contact">
+          <div class="mail-icon">
+            <div class="mail-base">
+              <div class="mail-top"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!--END OF NAV -->
+  </header>
+
+  <main>
+    <!--HERO IMG/DESCRIPTION-->
+    <div class="container text-center">
+      <h1 class="pt-3 headersect"  id="about">
+        <b><u>About Us</u></b>
+      </h1>
+      <div class="row m-3">
+        <div class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="imgs/lbtchero.png" class="rounded-3 img-fluid" id="imgfix" />
           </div>
         </div>
+        <div
+          class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
+          id="text">
+          <h2 class="textfont">
+            Founded on October 24, 2018, we started our small, family-owned business with a standard of excellence. We
+            started out in Marlboro, New Jersey, making the very best wooden toys in the town. Our three founders, Evan,
+            Abigail, and Elizabeth Thorne founded the company, personally making every toy sold. Over time, they grew
+            their family name around the state of New Jersey and became the three CEOs. Evan runs the advertising
+            component of the company, Abigail is in charge of the business decisions of the company, and Elizabeth works
+            on the toys.</h2>
+        </div>
       </div>
-      <!--END OF HERO IMG/DESCRIPTION-->
-    </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+      <div class="row m-3" id="about">
+        <div
+          class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
+          id="text">
+          <h2 class="textfont">
+            From the start, our sales drastically exceeded our expectations and we were able to expand a lot sooner than expected. We opened up two more locations in New Jersey, one in Montclair and the other in Cherry Hill. For the past 6 years, we have upheld our initial standards of excellence by creating over 100 unique and original wooden toys for children. Our hopes for the future are to maintain this standard, continue developing our own unique wooden toys, and to continue expanding to new locations, maybe even out of state. 
+</h2>
+        </div>
+        <div class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <img src="imgs/lbtchero.png" class="rounded-3 img-fluid" id="imgfix" />
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Slideshow container -->
+      <div class="py-3">
+        <div class="slideshow-container">
+          <!-- Full-width slides/quotes -->
+          <div class="mySlides">
+            <q>Absolutely charming! Little Bird Toys Co. is a treasure trove of beautifully crafted wooden toys. Each
+              piece exudes warmth and nostalgia. My kids adore their toys from here, and I love knowing that they're
+              playing with something timeless and eco-friendly.″</q>
+            <p class="author">- Nick G.</p>
+          </div>
 
-    <script src="script.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+          <div class="mySlides">
+            <q>As a lifelong Drake fan, I gotta say, Little Bird Toys Co. is the real deal. Just like Drake's music,
+              these toys are classic and timeless. My son's favorite toy is the wooden xylophone we got from here. It's
+              like music to my ears watching him play!″</q>
+            <p class="author">- Issac E.</p>
+          </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+          <div class="mySlides">
+            <q>Little Bird Toy Co.'s wooden airplane is a soaring success! My son adores it, and I love its durable,
+              eco-friendly design. <br> It's a classic toy that sparks endless adventures.″</q>
+            <p class="author">- Ayat S.</p>
+          </div>
+          <div class="mySlides">
+            <q>Little Bird Toy Co. is a breath of fresh air, much like the crisp mountain breeze I experience when
+              snowboarding. Their dedication to craftsmanship and sustainability aligns perfectly with my values. Every
+              purchase feels like a small victory for the planet, while also bringing endless joy to my little ones.
+              It's a win-win!″</q>
+            <p class="author">- Sean M.</p>
+          </div>
+          <div class="mySlides">
+            <q>Little Bird Toy Co. is top-notch! From home to classroom, their toys bring joy and inspire creativity. A
+              trusted favorite for both my family and my students.″</q>
+            <p class="author">- Gregory K.</p>
+          </div>
+        </div>
+
+        <!-- Dots/bullets/indicators -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+      </div>
+      <hr>
+      <h1 class="pt-3 headersect"  id="gallery">
+        <b><u>Toys</u></b>
+      </h1>
+    </div>
+    <!--END OF HERO IMG/DESCRIPTION-->
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
