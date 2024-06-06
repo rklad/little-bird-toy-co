@@ -55,126 +55,114 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-// OBJECTS FOR GALLERY
-
-const toysForSale = [
+const Products = [
   {
-    name: "Block Set",
-    price: 39.99,
-    img: "imgs/block5.jpg",
-    link: "",
+      product: 'Car',
+      price: '11.99',
+      description: 'This heirloom-quality wooden car is a timeless treasure. Handcrafted from domestic and exotic hardwoods with a clear lacquer finish, this unique car will inspire generations of imaginative play. Please note potential choking hazards for small children.',
+      cardimg: 'imgs/car3.jpg',
+      img: 'imgs/car3.jpg',
+      modalID: 'modal2'
   },
   {
-    name: "Boat",
-    price: 14.99,
-    img: "imgs/boat2.jpg",
-    link: "",
+      product: 'Train',
+      price: '49.99',
+      description: 'Embark on a charming journey with this beautiful handcrafted wooden train set. Engine and three interchangeable cars boast intricate details made from real beech wood. Large size with moving wheels and a fully ecological design.',
+      cardimg: 'imgs/train7.jpg',
+      img: 'imgs/train7.jpg',
+      modalID: 'modal3'
   },
   {
-    name: "Car",
-    price: 11.99,
-    img: "imgs/car3.jpg",
-    link: "",
+      product: 'Airplane',
+      price: '29.99',
+      description: 'Soar through imaginative skies with this classic wooden airplane. Handcrafted from sustainable Baltic birch wood with a safe, natural harvest finish and a spinning propeller. ',
+      cardimg: 'imgs/plane3.jpg',
+      img: 'imgs/plane3.jpg',
+      modalID: 'modal4'
   },
   {
-    name: "Plane",
-    price: 29.99,
-    img: "imgs/plane3.jpg",
-    link: "",
+      product: 'Boat',
+      price: '14.99',
+      description: 'Set sail for bathtub adventures with this adorable wooden boat. Made from solid Maine white pine, this handcrafted toy floats and features rounded edges for safety.',
+      cardimg: 'imgs/boat2.jpg',
+      img: 'imgs/boat2.jpg',
+      modalID: 'modal5'
   },
   {
-    name: "Train",
-    price: 49.99,
-    img: "imgs/train7.jpg",
-    link: "",
+      product: 'Block Set',
+      price: '39.99',
+      description: 'Build creativity and imagination with this high-quality, 72-piece block set. Made from naturally finished and smooth-sanded hardwood blocks, this set comes in a convenient wooden storage crate',
+      cardimg: 'imgs/block5.jpg',
+      img: 'imgs/block5.jpg',
+      modalID: 'modal6'
   },
   {
-    name: "Xylophone",
-    price: 24.99,
-    img: "imgs/xylophone.webp",
-    link: "",
+      product: 'Xylophone',
+      price: '24.99',
+      description: 'hi',
+      cardimg: 'imgs/xylophone.webp',
+      img: 'imgs/xylophone.webp',
+      modalID: 'modal7'
   },
 ];
 
-function generateToysForSale() {
-  const toysForSaleContainer = document.getElementById("toysForSale");
+function generateProductCards() {
+  const productCardsContainer = document.getElementById('productCards');
 
-  toysForSale.forEach((toy) => {
-    const card = document.createElement("div");
-    card.classList.add("col-md-4");
-    card.classList.add("py-2");
+  Products.forEach((product, index) => {
+      const card = document.createElement('div');
+      card.classList.add('col-lg-4', 'col-md-6', 'col-sm-12');
 
-    let backgroundColor;
-    switch (toy.name) {
-      default:
-        backgroundColor = "white"; // White background
-    }
-
-    card.innerHTML = `
-        <div class = "card text-dark" style="z-index: -1;">
+      card.innerHTML = `
+          <div class = "card text-dark">
             <div class = "card-header">
-                ${toy.name}
+                ${product.product}
             </div>
             <div class = "card-image">
-              <img src="${toy.img}" class="img-fluid" style="min-height: 250px; height: 275px;">
+              <img src="${product.img}" class="img-fluid" style="min-height: 250px; height: 275px;">
             </div>
-            <div class = "card-body py-1" style="background-color:${backgroundColor};">
-                <p><strong>Price: </strong>$${toy.price}</p> 
+            <div class = "card-body py-1" style="background-color:$     {backgroundColor};">
+              <p><strong>Price: </strong>$${product.price}</p> 
             </div>
             <div class="card-footer text-center bg-white border-none">
-              <button class="module-border-wrap learn-more-btn" id="myBtnOne">Learn More!</button>
-              <div id="myModalOne" class="modal">
-                <div class="modal-content">
-                  <span class="close closeOne">&times;</span>
-                  <h1 class="text-center">2007</h1>
-                  <hr>
-                  <img class="imgstyle2" src="${toy.img}" />
-                  <hr>
-                  <p class="text-center mt-3">I was born.</p>
-                  <p class="text-center"><b>Two whole days before Benjamin Lipsky.</b></p>
-                </div>
-              </div>
+              <a href="#" class="learn-more-btn" data-toggle="modal" data-target="#${product.modalID}">Learn More</a>
             </div>
+          </div>  
+          <!-- Modal -->
+          <div class="modal fade"  role="dialog" aria-labelledby="ModelLabel" aria-hidden="true" id="${product.modalID}">
+              <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable" >
+                  <div class="modal-content">
+                      <div class="modal-body">
+                          <div class="row">
+                              <div class="col-md-12 col-lg-10 text-center">
+                                  <img id="mainPic${index}" class="mainPic img-fluid py-0" src="${product.img}">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-12">
+                                  <h4><br>${product.description}</h4>
+                                  <h6>Price: ${product.price}</h6>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="modal-footer" style="display: flex; justify-content: space-between;">
+                          <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-        `;
-    for (let i = 0; i < card.children.length; i++) {
-      card.children[i].style.backgroundColor = backgroundColor;
-    }
-    toysForSaleContainer.appendChild(card);
+      `;
+      productCardsContainer.appendChild(card);
   });
 }
-
-// Get the modal
-var modalOne = document.getElementById("myModalOne");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtnOne");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeOne")[0];
-
-// When the user clicks anywhere outside of the modal, close it
-window.onload = function (event) {
-  setInterval(function () {
-    plusSlides(1);
-  }, 7500);
-  generateToysForSale();
-};
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modalOne.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modalOne.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modalOne) {
-    modalOne.style.display = "none";
+  function refresh() {
+    location.reload();
   }
-}
+  
+  // Call the function to generate toys for sale
+  window.onload = function (event) {
+    setInterval(function () {
+      plusSlides(1);
+    }, 7500);
+    generateProductCards();
+  };
