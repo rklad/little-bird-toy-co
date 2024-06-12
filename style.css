@@ -105,10 +105,21 @@
   content: "";
 }
 
-section {
+.vl {
+  border-left: 2px solid black;
+  padding-right: 4px;
+  height: 80px;
+  display: inline;
   position: relative;
-  left: 100px;
-}   
+  top: 0;
+}
+
+.header-text {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
 nav {
   float: left;
@@ -285,6 +296,16 @@ nav ul li div {
 body {
   background-color: #cf9068;
   color: white;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: inherit;
 }
 
 .textfont {
@@ -413,7 +434,6 @@ a.learn-more-btn:hover {
 .reviews {
   background-color: #ff914d;
   border: solid white 5px;
-  border-radius:10px 10px 10px 10px
 }
 
 /* Contact Page */
@@ -702,7 +722,7 @@ a.learn-more-btn:hover {
     border-right-color: initial;
     border-bottom-width: 1.8px;
     border-bottom-style: solid;
-    border-bottom-color: #a2a2a2;
+    border-bottom-color: white;
   }
 
   .contact_us_green .responsive-cell-block.wk-tab-12.wk-mobile-12.wk-desk-5.wk-ipadp-10 {

@@ -121,7 +121,7 @@ function generateProductCards() {
 
       card.innerHTML = `
           <div class = "card text-dark">
-            <div class = "card-header">
+            <div class = "card-header header-text">
                 ${product.product}
             </div>
             <div class = "card-image">
@@ -130,7 +130,7 @@ function generateProductCards() {
             <div class = "card-body py-1" style="background-color:$     {backgroundColor};">
               <p><strong>Price: </strong>$${product.price}</p> 
             </div>
-            <div class="card-footer text-center bg-white border-none">
+            <div class="card-footer text-center border-none">
               <a href="#" class="learn-more-btn" data-toggle="modal" data-target="#${product.modalID}">Learn More</a>
             </div>
           </div>  
@@ -153,7 +153,7 @@ function generateProductCards() {
                           </div>
                       </div>
                       <div class="modal-footer" style="display: flex; justify-content: space-between;">
-                          <button type="button" class="btn btn-secondary close" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-secondary close text-white" data-dismiss="modal">Close</button>
                       </div>
                   </div>
               </div>

@@ -1,320 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Little Bird Toy Co</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
-<head>
-  <title>Little Bird Toy Co</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  
-  <link rel="stylesheet" href="style.css" />
-  
-  <link rel="icon" type="image/x-icon" href="imgs/Main Logo.png" />
+    <link rel="stylesheet" href="style.css" />
 
-  <!--GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-</head>
+    <link rel="icon" type="image/x-icon" href="imgs/Main Logo.png" />
 
-<body>
-  <header>
-    <!--START OF lANDING PAGE-->
-    <div class="header" id="top">
-      <img src="imgs/Main Logo.png" class="img-fluid imgfix2" />
-    </div> 
-    <div class="hero-image img-fluid d-none d-md-block">
-      <div class="hero-text">
-        <p class="fontsize m-0">Little Bird Toy Co.</p>
-        <p class="fontsize2">Wooden Toy Shop</p>
-        <button data-href="#about" class="btnstyle1 text-white">
-          Learn More
-        </button>
+    <!--GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!--START OF lANDING PAGE-->
+      <div class="header" id="top">
+        <img src="imgs/Main Logo.png" class="img-fluid imgfix2" />
       </div>
-    </div>
-    <div class="hero-image2 d-md-none d-block">
-      <div class="hero-text2">
-        <p class="fontsize m-0">Little Bird Toy Co.</p>
-        <p class="fontsize2">Wooden Toy Shop</p>
-        <button data-href="#about" class="btn btnstyle1 text-white">
-          Learn More
-        </button>
+      <div class="hero-image img-fluid d-none d-md-block">
+        <div class="hero-text">
+          <p class="fontsize m-0">Little Bird Toy Co.</p>
+          <p class="fontsize2">Wooden Toy Shop</p>
+          <button data-href="#about" class="btnstyle1 text-white">
+            Learn More
+          </button>
+        </div>
       </div>
-    </div>
-    <!--END OF LANDING PAGE-->
+      <div class="hero-image2 d-md-none d-block">
+        <div class="hero-text2">
+          <p class="fontsize m-0">Little Bird Toy Co.</p>
+          <p class="fontsize2">Wooden Toy Shop</p>
+          <button data-href="#about" class="btn btnstyle1 text-white">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <!--END OF LANDING PAGE-->
 
-    <!-- START OF NAV-->
-    <nav style="z-index: 2;">
-      <ul>
-        <li data-href="#top" class="d-inline-block">
-          <div class="home-icon">
-            <div class="roof">
-              <div class="roof-edge"></div>
+      <!-- START OF NAV-->
+      <nav style="z-index: 2">
+        <ul>
+          <li data-href="#top" class="d-inline-block">
+            <div class="home-icon">
+              <div class="roof">
+                <div class="roof-edge"></div>
+              </div>
+              <div class="front"></div>
             </div>
-            <div class="front"></div>
-          </div>
-        </li>
+          </li>
 
-        <li data-href="#about">
-          <div class="about-icon">
-            <div class="aboutus">
-              <img src="imgs/mainlogowhite.png" class="imgfix" />
+          <li data-href="#about">
+            <div class="about-icon">
+              <div class="aboutus">
+                <img src="imgs/mainlogowhite.png" class="imgfix" />
+              </div>
+            </div>
+          </li>
+
+          <li data-href="#gallery">
+            <div class="work-icon">
+              <img src="imgs/blocks.png" class="imgfix" />
+            </div>
+          </li>
+
+          <li data-href="#contact">
+            <div class="mail-icon">
+              <div class="mail-base">
+                <div class="mail-top"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!--END OF NAV -->
+    </header>
+
+    <main>
+      <!--HERO IMG/DESCRIPTION-->
+      <div class="container text-center">
+        <h1 class="pt-3 headersect" id="about">
+          <b><u>About Us</u></b>
+        </h1>
+        <div class="row m-3">
+          <div
+            class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <img
+                src="imgs/lbtchero.png"
+                class="rounded-3 img-fluid"
+                id="imgfix"
+              />
             </div>
           </div>
-        </li>
-
-        <li data-href="#gallery">
-          <div class="work-icon">
-            <img src="imgs/blocks.png" class="imgfix" />
+          <div
+            class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
+            id="text"
+          >
+            <h2 class="textfont">
+              Founded on October 24, 2018, we started our small, family-owned
+              business with a standard of excellence. We started out in
+              Marlboro, New Jersey, making the very best wooden toys in the
+              town. Our three founders, Evan, Abigail, and Elizabeth Thorne
+              founded the company, personally making every toy sold. Over time,
+              they grew their family name around the state of New Jersey and
+              became the three CEOs. Evan runs the advertising component of the
+              company, Abigail is in charge of the business decisions of the
+              company, and Elizabeth works on the toys.
+            </h2>
           </div>
-        </li>
-
-        <li data-href="#contact">
-          <div class="mail-icon">
-            <div class="mail-base">
-              <div class="mail-top"></div>
+        </div>
+        <div class="row m-3" id="about">
+          <div
+            class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
+            id="text"
+          >
+            <h2 class="textfont">
+              From the start, our sales drastically exceeded our expectations
+              and we were able to expand a lot sooner than expected. We opened
+              up two more locations in New Jersey, one in Montclair and the
+              other in Cherry Hill. For the past 6 years, we have upheld our
+              initial standards of excellence by creating over 100 unique and
+              original wooden toys for children. Our hopes for the future are to
+              maintain this standard, continue developing our own unique wooden
+              toys, and to continue expanding to new locations, maybe even out
+              of state.
+            </h2>
+          </div>
+          <div
+            class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center"
+          >
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <img
+                src="imgs/toystore.png "
+                class="rounded-3 img-fluid"
+                id="imgfix"
+              />
             </div>
           </div>
-        </li>
-      </ul>
-    </nav>
-    <!--END OF NAV -->
-  </header>
-
-  <main>
-    <!--HERO IMG/DESCRIPTION-->
-    <div class="container text-center">
-      <h1 class="pt-3 headersect"  id="about">
-        <b><u>About Us</u></b>
-      </h1>
-      <div class="row m-3">
-        <div class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <img src="imgs/lbtchero.png" class="rounded-3 img-fluid" id="imgfix" />
-          </div>
-        </div>
-        <div
-          class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
-          id="text">
-          <h2 class="textfont">
-            Founded on October 24, 2018, we started our small, family-owned business with a standard of excellence. We
-            started out in Marlboro, New Jersey, making the very best wooden toys in the town. Our three founders, Evan,
-            Abigail, and Elizabeth Thorne founded the company, personally making every toy sold. Over time, they grew
-            their family name around the state of New Jersey and became the three CEOs. Evan runs the advertising
-            component of the company, Abigail is in charge of the business decisions of the company, and Elizabeth works
-            on the toys.</h2>
-        </div>
-      </div>
-      <div class="row m-3" id="about">
-        <div
-          class="col-12 col-lg-6 my-lg-0 my-3 d-flex justify-content-center align-items-center p-3 text-center rounded-3 rounded-start-3 align-items-center"
-          id="text">
-          <h2 class="textfont">
-            From the start, our sales drastically exceeded our expectations and we were able to expand a lot sooner than expected. We opened up two more locations in New Jersey, one in Montclair and the other in Cherry Hill. For the past 6 years, we have upheld our initial standards of excellence by creating over 100 unique and original wooden toys for children. Our hopes for the future are to maintain this standard, continue developing our own unique wooden toys, and to continue expanding to new locations, maybe even out of state. 
-</h2>
-        </div>
-        <div class="col-12 col-lg-6 p-5 text-center rounded-3 d-flex justify-content-center align-items-center">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <img src="imgs/toystore.png " class="rounded-3 img-fluid" id="imgfix" />
-          </div>
-        </div>
-        
-      </div>
-      
-      <!-- Slideshow container -->
-      <div class="py-3">
-        <div class="slideshow-container">
-          <!-- Full-width slides/quotes -->
-          <div class="mySlides reviews">
-            <q class="text-white">Absolutely charming! Little Bird Toys Co. is a treasure trove of beautifully crafted wooden toys. Each
-              piece exudes warmth and nostalgia. My kids adore their toys from here, and I love knowing that they're
-              playing with something timeless and eco-friendly.″</q>
-            <p class="author">- Nick G.</p>
-          </div>
-
-          <div class="mySlides reviews">
-            <q class="text-white">As a lifelong Drake fan, I gotta say, Little Bird Toy Co. is the real deal. Just like Drake's music,
-              these toys are classic and timeless. My son's favorite toy is the wooden xylophone we got from here. It's
-              like music to my ears watching him play!″</q>
-            <p class="author">- Issac E.</p>
-          </div>
-
-          <div class="mySlides reviews">
-            <q class="text-white">Little Bird Toy Co.'s wooden airplane is a soaring success! My son adores it, and I love its durable,
-              eco-friendly design. <br> It's a classic toy that sparks endless adventures.″</q>
-            <p class="author">- Ayat S.</p>
-          </div>
-          <div class="mySlides reviews">
-            <q class="text-white">Little Bird Toy Co. is a breath of fresh air, much like the crisp mountain breeze I experience when
-              snowboarding. Their dedication to craftsmanship and sustainability aligns perfectly with my values. Every
-              purchase feels like a small victory for the planet, while also bringing endless joy to my little ones.
-              It's a win-win!″</q>
-            <p class="author">- Sean M.</p>
-          </div>
-          <div class="mySlides reviews">
-            <q class="text-white">Little Bird Toy Co. is top-notch! From home to classroom, their toys bring joy and inspire creativity. A
-              trusted favorite for both my family and my students.″</q>
-            <p class="author">- Gregory K.</p>
-          </div>
         </div>
 
-        <!-- Dots/bullets/indicators -->
-        <div class="dot-container reviews">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
+        <!-- Slideshow container -->
+        <div class="py-3">
+          <div class="slideshow-container">
+            <!-- Full-width slides/quotes -->
+            <div class="mySlides reviews">
+              <q class="text-white"
+                >Absolutely charming! Little Bird Toys Co. is a treasure trove
+                of beautifully crafted wooden toys. Each piece exudes warmth and
+                nostalgia. My kids adore their toys from here, and I love
+                knowing that they're playing with something timeless and
+                eco-friendly.″</q
+              >
+              <p class="author">- Nick G.</p>
+            </div>
+
+            <div class="mySlides reviews">
+              <q class="text-white"
+                >As a lifelong Drake fan, I gotta say, Little Bird Toy Co. is
+                the real deal. Just like Drake's music, these toys are classic
+                and timeless. My son's favorite toy is the wooden xylophone we
+                got from here. It's like music to my ears watching him play!″</q
+              >
+              <p class="author">- Issac E.</p>
+            </div>
+
+            <div class="mySlides reviews">
+              <q class="text-white"
+                >Little Bird Toy Co.'s wooden airplane is a soaring success! My
+                son adores it, and I love its durable, eco-friendly design.
+                <br />
+                It's a classic toy that sparks endless adventures.″</q
+              >
+              <p class="author">- Ayat S.</p>
+            </div>
+            <div class="mySlides reviews">
+              <q class="text-white"
+                >Little Bird Toy Co. is a breath of fresh air, much like the
+                crisp mountain breeze I experience when snowboarding. Their
+                dedication to craftsmanship and sustainability aligns perfectly
+                with my values. Every purchase feels like a small victory for
+                the planet, while also bringing endless joy to my little ones.
+                It's a win-win!″</q
+              >
+              <p class="author">- Sean M.</p>
+            </div>
+            <div class="mySlides reviews">
+              <q class="text-white"
+                >Little Bird Toy Co. is top-notch! From home to classroom, their
+                toys bring joy and inspire creativity. A trusted favorite for
+                both my family and my students.″</q
+              >
+              <p class="author">- Gregory K.</p>
+            </div>
+          </div>
+
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container reviews">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+          </div>
         </div>
-      </div>
-      <hr>
-      <h1 class="pt-3 headersect"  id="gallery">
-        <b><u>Toys</u></b>
-      </h1>
-      <div class="container">
-        <div class="row p-3 g-3" id="productCards">
+        <hr />
+        <h1 class="pt-3 headersect" id="gallery">
+          <b><u>Toys</u></b>
+        </h1>
+        <div class="container">
+          <div class="row p-3 g-3" id="productCards"></div>
         </div>
-      </div>
-      <hr>
-      <h1 class="pt-3 headersect"  id="contact">
-        <b><u>Contact</u></b>
-      </h1>
-      <!--Contact-->
-      <div class="contact_us_green text-white">
-        <div class="responsive-container-block big-container">
-          <div class="responsive-container-block container">
-            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line" id="i69b-2">
-              <form class="form-box">
-                <div class="container-block form-wrapper">
-                  <div class="head-text-box">
-                    <p class="text-blk contactus-head">
-                      Contact us
+        <hr />
+        <h1 class="pt-3 headersect" id="contact">
+          <b><u>Contact</u></b>
+        </h1>
+        <!--Contact-->
+        <div class="contact_us_green text-white">
+          <div class="responsive-container-block big-container">
+            <div class="responsive-container-block container">
+              <div
+                class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-7 wk-ipadp-10 line"
+                id="i69b-2"
+              >
+                <form class="form-box">
+                  <div class="container-block form-wrapper">
+                    <div class="responsive-container-block">
+                      <div
+                        class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6"
+                        id="i10mt-6"
+                      >
+                        <p class="text-blk input-title">FIRST NAME</p>
+                        <input class="input" id="ijowk-6" name="FirstName" />
+                      </div>
+                      <div
+                        class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                      >
+                        <p class="text-blk input-title">LAST NAME</p>
+                        <input class="input" id="indfi-4" name="Last Name" />
+                      </div>
+                      <div
+                        class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                      >
+                        <p class="text-blk input-title">EMAIL</p>
+                        <input class="input" id="ipmgh-6" name="Email" />
+                      </div>
+                      <div
+                        class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12"
+                      >
+                        <p class="text-blk input-title">PHONE NUMBER</p>
+                        <input class="input" id="imgis-5" name="PhoneNumber" />
+                      </div>
+                      <div
+                        class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12"
+                        id="i634i-6"
+                      >
+                        <p class="text-blk input-title">
+                          WHAT DO YOU HAVE IN MIND
+                        </p>
+                        <textarea
+                          class="textinput"
+                          id="i5vyy-6"
+                          placeholder="Please enter query..."
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="btn-wrapper">
+                      <button class="submit-btn">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div
+                class="text-white responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10"
+                id="ifgi"
+              >
+                <div class="container-box">
+                  <div class="text-content">
+                    <p class="text-blk contactus-head">Contact us</p>
+                    <p class="text-blk contactus-subhead text-white">
+                      Below is our contact information if you ever have a
+                      problem with our products, or a question about our
+                      company. We have also provided the addresses to our 3
+                      locations if you ever want to come meet us in person and
+                      purchase our toys! Don't forget to follow us on social
+                      media! We are
+                      <strong>@littlebirdtoyco</strong> on all of our pages!
                     </p>
-                    <p class="text-blk contactus-subhead">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al iqua. Ut enim
-                    </p>
                   </div>
-                  <div class="responsive-container-block">
-                    <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-6">
-                      <p class="text-blk input-title">
-                        FIRST NAME
-                      </p>
-                      <input class="input" id="ijowk-6" name="FirstName">
+                  <div class="workik-contact-bigbox">
+                    <div class="workik-contact-box">
+                      <div class="phone text-box">
+                        <img
+                          class="contact-svg"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg"
+                        />
+                        <p class="contact-text text-white">+1 (732) 555-1234</p>
+                      </div>
+                      <div class="address text-box">
+                        <img
+                          class="contact-svg"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg"
+                        />
+                        <p class="contact-text text-white">
+                          info@littlebirdtoyco.com
+                        </p>
+                      </div>
+                      <div class="mail text-box">
+                        <img
+                          class="contact-svg"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg"
+                        />
+                        <p class="contact-text text-white">
+                          123 Main Street Marlboro, NJ 07746
+                          <br />
+                          <strong>Store Hours:</strong> 10AM - 7PM Monday -
+                          Saturday
+                          <br />
+                          <br />
+                          456 Elm Avenue Montclair, NJ 07042
+                          <br />
+                          <strong>Store Hours:</strong> 10AM - 7PM Monday -
+                          Saturday
+                          <br />
+                          <br />
+                          789 Oak Street Cherry Hill, NJ 08002
+                          <br />
+                          <strong>Store Hours:</strong> 10AM - 7PM Monday -
+                          Saturday
+                        </p>
+                      </div>
                     </div>
-                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                      <p class="text-blk input-title">
-                        LAST NAME
-                      </p>
-                      <input class="input" id="indfi-4" name="Last Name">
+                    <div class="social-media-links">
+                      <a href="https://www.google.com/?safe=active&ssui=on">
+                        <img
+                          class="social-svg"
+                          id="is9ym"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg"
+                        />
+                      </a>
+                      <a href="https://twitter.com">
+                        <img
+                          class="social-svg"
+                          id="i706n"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg"
+                        />
+                      </a>
+                      <a href="https://instagram.com  ">
+                        <img
+                          class="social-svg"
+                          id="ib9ve"
+                          src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg"
+                        />
+                      </a>
+                      <!-- COULD POTENTIALLY ADD A TIKTOK-->
                     </div>
-                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                      <p class="text-blk input-title">
-                        EMAIL
-                      </p>
-                      <input class="input" id="ipmgh-6" name="Email">
-                    </div>
-                    <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                      <p class="text-blk input-title">
-                        PHONE NUMBER
-                      </p>
-                      <input class="input" id="imgis-5" name="PhoneNumber">
-                    </div>
-                    <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-6">
-                      <p class="text-blk input-title">
-                        WHAT DO YOU HAVE IN MIND
-                      </p>
-                      <textarea class="textinput" id="i5vyy-6" placeholder="Please enter query..."></textarea>
-                    </div>
-                  </div>
-                  <div class="btn-wrapper">
-                    <button class="submit-btn">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-            <div class="text-white responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-5 wk-ipadp-10" id="ifgi">
-              <div class="container-box">
-                <div class="text-content">
-                  <p class="text-blk contactus-head">
-                    Contact us
-                  </p>
-                  <p class="text-blk contactus-subhead text-white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna al iqua. Ut enim
-                  </p>
-                </div>
-                <div class="workik-contact-bigbox">
-                  <div class="workik-contact-box">
-                    <div class="phone text-box">
-                      <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET21.jpg">
-                      <p class="contact-text text-white">
-                        +1258 3258 5679
-                      </p>
-                    </div>
-                    <div class="address text-box">
-                      <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET22.jpg">
-                      <p class="contact-text text-white">
-                        hello@workik.com
-                      </p>
-                    </div>
-                    <div class="mail text-box">
-                      <img class="contact-svg" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/ET23.jpg">
-                      <p class="contact-text text-white">
-                        102 street, y cross 485656
-                      </p>
-                    </div>
-                  </div>
-                  <div class="social-media-links">
-                    <a href="https://www.google.com/?safe=active&ssui=on">
-                      <img class="social-svg" id="is9ym" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
-                    </a>
-                    <a href="https://twitter.com">
-                      <img class="social-svg" id="i706n" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
-                    </a>
-                    <a href="https://instagram.com  ">
-                      <img class="social-svg" id="ib9ve" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
-                    </a>
-                    <!-- COULD POTENTIALLY ADD A TIKTOK-->
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>  
-      <!--End of Contact-->
-    </div>
-    <!--END OF HERO IMG/DESCRIPTION-->
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
+        <!--End of Contact-->
+      </div>
+      <!--END OF HERO IMG/DESCRIPTION-->
+    </main>
+    <!--footer start-->
+    <!--footer start-->
+    <footer
+      class="bg-light text-center text-white align-items-center justify-content-center"
+    >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Github -->
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #333333"
+            href="https://github.com/zlevin1228"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: rgb(212, 0, 0)"
+            href="https://zlevin1228.github.io/Gallery/"
+            role="button"
+            target="_blank"
+            ><i class="fa-solid fa-laptop-code"></i
+          ></a>
+          <div class="vl col-1"></div>
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: gray"
+            href="https://github.com/rklad"
+            role="button"
+            target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class="btn text-white btn-floating m-1"
+            style="background-color: #284b63"
+            href="https://rklad.github.io/gallery/"
+            role="button"
+            target="_blank"
+            ><i class="fa-solid fa-laptop-code"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
 
-   <!-- Bootstrap JavaScript Libraries -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <p>Created by Zachary Levin & Randy Kladerman</p>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!--footer end  -->
 
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
 
-   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
-       </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
-       </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
 
-   <!--Custom JS-->
-   <script src="script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
 
+    <!--Custom JS-->
+    <script src="script.js"></script>
+  </body>
 </html>
